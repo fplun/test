@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+	/>
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta name="keywords" content="会员结算系统" />
+	<meta name="description" content="会员结算系统" />
+	<title>首页概览</title>
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/iosoverlay.css" rel="stylesheet" />
+	<link href="css/simple-line-icons.css" rel="stylesheet" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/jquery.orgchart.css" rel="stylesheet" />
+	<link href="css/bealert.css" rel="stylesheet" />
+	<link href="css/toastr.css" rel="stylesheet" />
+	<link href="css/bootstrap-datetimepicker.css" rel="stylesheet" />
+	<link href="css/engine.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/mtopt-3.0-min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bealert.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/iosoverlay.js"></script>
+	<script type="text/javascript" src="js/jquery.orgchart.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-cn.js"></script>
+	<script type="text/javascript" src="js/toastr.js"></script>
+	<script type="text/javascript" src="js/echarts.common.min.js"></script>
+	<script type="text/javascript" src="js/spin.min.js"></script>
+	<script type="text/javascript" src="js/engine.js"></script>
+	<script type="text/javascript" src="js/settimeqt.js"></script>
+	<style>
+		.part01 span {
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 14px !important;
+			margin-top: -10px !important;
+		}
+
+		.part01 em {
+			margin-right: 8px;
+		}
+
+		.titlewm span,
+		.panel-default span {
+			margin-right: 0 !important
+		}
+
+		.panel-default div {
+			padding-right: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="gaussian_warp" class="wrapper">
+		<!-- 顶部菜单 -->
+		<header class="topnavbar-wrapper  navbar-fixed-top">
+			<nav class="navbar topnavbar" style="height:3.6em;">
+				<!-- 图标控制-->
+				<div class="navbar-header">
+					<a href="" class="navbar-brand">
+						<div class="brand-logo">
+							<img src="images/logo.png" alt="App Logo" class="img-responsive" />
+						</div>
+						<div class="brand-logo-collapsed">
+							<img src="images/logo-single.png" alt="App Logo" class="img-responsive" />
+						</div>
+					</a>
+				</div>
+				<!-- 菜单按钮-->
+				<div class="nav-wrapper">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
+								<em class="fa fa-navicon"></em>
+							</a>
+							<a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+								<em class="fa fa-navicon"></em>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contri" style="display: inline-block; position: absolute; top: 5px; right: 50px;z-index:100000;">
+					<a href="/?_locale=zh_CN">
+						<img src="images/china.jpg" alt="">
+					</a>
+					<a href="/?_locale=en_US">
+						<img src="images/USA.jpg" alt="">
+					</a>
+					<a href="/?_locale=ko_KR">
+						<img src="images/korean.jpg" alt="">
+					</a>
+					<a href="/?_locale=ja_JP">
+						<img src="images/japan.jpg" alt="">
+					</a>
+				</div>
+			</nav>
+		</header>
+		<!-- 侧边栏-->
+
+		<!DOCTYPE html>
+		<html lang="en">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- 侧边栏-->
+		<aside class="aside">
+			<div class="aside-inner">
+				<nav class="sidebar">
+					<ul class="nav">
+						<li class="nav-heading">
+							<span>欢迎使用</span>
+						</li>
+						<li>
+							<a href="#message1" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>切换语言</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message1" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="#mess2" title="Layouts" data-toggle="collapse">
+										<span>中文版</span>
+										<i class="fa fa-th-list hidden-xs" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<div id="mess2" class="nav sidebar-subnav collapse">
+										<a href="/?_locale=zh_TW">
+											<span class="text-left">中文繁体</span>
+										</a>
+										<a href="/?_locale=zh_CN">
+											<span class="text-left">中文简体</span>
+										</a>
+									</div>
+								</li>
+								<li class="">
+									<a href="/?_locale=en_US">
+										<span>英文版</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="/?_locale=ko_KR">
+										<span>韩文版</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="/?_locale=ja_JP">
+										<span>日文版</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#message2" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>我的账户</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message2" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="index">
+										<span>首页</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="wordedit">
+										<span>更改登录密码</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="safeedit">
+										<span>更改安全密码</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="useredit">
+										<span>个人信息资料</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#message3" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>会员管理</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message3" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="userreg">
+										<span>立即注册</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="recmlists">
+										<span>我的推荐</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="useraudio">
+										<span>会员审核</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="NetworkDiagram?huinumber=a3">
+										<span>接点图谱</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#message4" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>账户中心</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message4" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="tctz">
+										<span>增加配套</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="taochan">
+										<span>配套管理</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#message5" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>资产管理</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message5" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="tofxbt">
+										<span>分享补贴</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="tozcsy">
+										<span>资产收益</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="transfernbzz">
+										<span>内部转账</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="transfer">
+										<span>会员转账</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="transferlist">
+										<span>转账记录</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="remittance">
+										<span>申请充值</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="remittancelist">
+										<span>充值记录</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#message6" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>数字资产</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message6" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="tozylmx">
+										<span>众易链明细</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="togzyl">
+										<span>购众易链</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="whitdraw">
+										<span>提币</span>
+									</a>
+								</li>
+								<li class="">
+									<a href="whitdrawlist">
+										<span>提币记录</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#message7" title="Layouts" data-toggle="collapse">
+								<em class="icon-graph"></em>
+								<span>公告中心</span>
+								<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+							</a>
+							<ul id="message7" class="nav sidebar-subnav collapse">
+								<li class="">
+									<a href="notice">
+										<span>新闻公告</span>
+									</a>
+								</li>
+								<li>
+									<a href="#mail" title="Layouts" data-toggle="collapse">
+										<em class="icon-bubbles"></em>
+										<span>内部邮箱</span>
+										<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="mail" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="send">
+												<span>发邮件</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="sendlists">
+												<span>发件箱</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="collectlists">
+												<span>收件箱</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="home-main">
+							<a id="Link_exit" href="login">
+								<span>注销登录</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+
+		</html>
+		<section style="position: relative;">
+			<div class="content-wrapper" style="margin-top: 0;position: relative;z-index: 2000000;">
+				<div class="content-heading banner" style="border-top:1px solid #e6e6e6;">
+					<img style="width: 100%; margin-top: 54px; display: block;" src="images/wmbg.jpg" />
+				</div>
+				<div class="row part01">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">账户级别</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-wallet fa-3x"></em>
+									<span class="h2 mt0">A套餐1000美金到4999美金</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">ZYL（锁仓）</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-star fa-3x"></em>
+									<span class="h2 mt0">500.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">ZYL（活期）</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-star fa-3x"></em>
+									<span class="h2 mt0">0.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">分享补贴</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-present fa-3x"></em>
+									<span class="h2 mt0">0.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">资产收益</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-graph fa-3x"></em>
+									<span class="h2 mt0">2.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">累计收益</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-trophy fa-3x"></em>
+									<span class="h2 mt0">2.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left"> 激活码</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-trophy fa-3x"></em>
+									<span class="h2 mt0">0.0000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">注册码</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-trophy fa-3x"></em>
+									<span class="h2 mt0">0.0000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<div class="panel widget bg-glass">
+							<div class="row row-table">
+								<div class="col-xs-4 pv-lg">
+									<div class="h2 mt0"></div>
+									<div class="text-uppercase text-left">消费积分</div>
+								</div>
+								<div class="col-xs-8 text-right bg-glass pv-lg" style="background: none">
+									<em class="icon-trophy fa-3x"></em>
+									<span class="h2 mt0">0.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<aside class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<p class="panel-title">最新资讯</p>
+							</div>
+							<div class="panel-body titlewm">
+							</div>
+						</div>
+					</aside>
+					<aside class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<p class="panel-title">信息资讯</p>
+							</div>
+							<div class="panel-body" style="padding-top: 0;">
+								<div class="member">
+									<div class="col-xs-12 col-md-5" style="font-weight:normal;text-align:left;">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<a href="#">编号[姓名] ：</a>
+										<span>a3</span>
+										<span>[1]</span>
+									</div>
+									<div class="col-xs-12 col-md-3" style="font-weight:normal;text-align:left">
+										<span>级别：</span>
+										<span>1000美金</span>
+									</div>
+									<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left;">
+										<span>注册日期：</span>
+										<span>2018-06-13 19:35:13.0</span>
+									</div>
+								</div>
+								<div class="member">
+									<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left">
+										<i class="fa fa-users" aria-hidden="true"></i>
+										<a href="#">我的团队：</a>
+										<span>直推</span>
+										<span>0人</span>
+									</div>
+									<div class="col-xs-12 col-md-3" style="font-weight:normal;text-align:left;">
+										<span>市场：</span>
+										<span>1258</span>
+									</div>
+									<div class="col-xs-12 col-md-5" style="font-weight:normal;text-align:left;">
+										<span>团队业绩：</span>
+										<span>0美金</span>
+									</div>
+								</div>
+								<div class="member">
+									<i style="margin-left:15px;" class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+									<a href="#">客服邮箱</a>
+									<span>zylcoin@163.com</span>
+								</div>
+								<div class="member">
+									<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left">
+										<i class="fa fa-users" aria-hidden="true"></i>
+										<a href="#">股数交易：</a>
+										<span>日交易量：</span>
+										<span>12</span>
+									</div>
+									<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left">
+										<i class="fa fa-users" aria-hidden="true"></i>
+										<span>日交易量(美金)：</span>
+										<span>1</span>
+									</div>
+									<div class="col-xs-12 col-md-3" style="font-weight:normal;text-align:left;">
+										<span>总交易量：</span>
+										<span>100</span>
+									</div>
+									<div class="col-xs-12 col-md-3" style="font-weight:normal;text-align:left;">
+										<span>总交易量（美金）：</span>
+										<span>1</span>
+									</div>
+								</div>
+								<div class="member">
+									<br/>
+									<br/>
+									<br/>
+									<br/>
+									<!-- 	<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left">
+												<i class="fa fa-users" aria-hidden="true"></i>
+												<a href="#">三级分销：</a>
+											</div>
+												<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left">
+												<i class="fa fa-users" aria-hidden="true"></i>
+												<span>现金币：</span>
+												<span></span>
+											</div>
+												<div class="col-xs-12 col-md-4" style="font-weight:normal;text-align:left">
+												<i class="fa fa-users" aria-hidden="true"></i>
+												<span>代币积分：</span>
+												<span></span>
+											</div> -->
+								</div>
+							</div>
+						</div>
+				</div>
+				</aside>
+			</div>
+	</div>
+	</section>
+	</div>
+</body>
+
+</html>

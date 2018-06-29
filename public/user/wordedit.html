@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="keywords" content="会员结算系统" />
+		<meta name="description" content="会员结算系统" />
+		<title>登录密码修改</title>
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link href="css/iosoverlay.css" rel="stylesheet" />
+		<link href="css/simple-line-icons.css" rel="stylesheet" />
+		<link href="css/font-awesome.min.css" rel="stylesheet" />
+		<link href="css/jquery.orgchart.css" rel="stylesheet" />
+		<link href="css/bealert.css" rel="stylesheet" />
+		<link href="css/toastr.css" rel="stylesheet" />
+		<link href="css/bootstrap-datetimepicker.css" rel="stylesheet" />
+		<link href="css/engine.css" rel="stylesheet" />
+		<style type="text/css">
+			.bg-glass {
+				background-color: none;
+			}
+			
+			legend {
+				border-bottom: none;
+			}
+			
+			.list-group-item,
+			.list-group-item:hover,
+			.list-group-item:focus {
+				background-color: transparent !important;
+				color: #fff !important;
+				border: none;
+			}
+			
+			.pages {
+				color: #999;
+				overflow: auto;
+			}
+			
+			.pages a,
+			.pages .cpb {
+				text-decoration: none;
+				float: left;
+				padding: 0 5px;
+				border: 1px solid #ddd;
+				background: #ffff;
+				margin: 0 2px;
+				font-size: 11px;
+				color: #000;
+			}
+			
+			.pages a:hover {
+				background-color: #E61636;
+				color: #fff;
+				border: 1px solid #E61636;
+				text-decoration: none;
+			}
+			
+			.pages .cpb {
+				font-weight: bold;
+				color: #fff;
+				background: #E61636;
+				border: 1px solid #E61636;
+			}
+		</style>
+		<script type="text/javascript" src="js/mtopt-3.0-min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bealert.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/iosoverlay.js"></script>
+		<script type="text/javascript" src="js/jquery.orgchart.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-cn.js"></script>
+		<script type="text/javascript" src="js/toastr.js"></script>
+		<script type="text/javascript" src="js/echarts.common.min.js"></script>
+		<script type="text/javascript" src="js/spin.min.js"></script>
+		<script type="text/javascript" src="js/engine.js"></script>
+		<script type="text/javascript">
+		   function tjf(){
+			   var old = $("#old").val();
+			   var newpwd = $("#newpwd").val();
+			   var newagin = $("#newagin").val();
+			   if(old.length!=0&&newpwd.length!=0&&newagin!=0){
+				   $("#form1").submit();
+			   }else{
+				   if(old.length==0){
+					   alert("请输入安全密码");
+				   }else if(newpwd.length==0){
+					   alert("请输入登录密码");
+				   }else if(newagin.length==0){
+					   alert("请输入确认登录密码");
+				   }
+			   }
+		   }
+		</script>
+	</head>
+
+	<body>
+		<form method="post" action="/wordedit" id="form1"  >
+			<div id="gaussian_warp" class="wrapper">
+				<!-- 顶部菜单 -->
+				<header class="topnavbar-wrapper  navbar-fixed-top">
+					<nav class="navbar topnavbar" style="height:3.6em;">
+						<!-- 图标控制-->
+						<div class="navbar-header">
+							<a href="" class="navbar-brand">
+								<div class="brand-logo">
+									<img src="images/logo.png" alt="App Logo" class="img-responsive" />
+								</div>
+								<div class="brand-logo-collapsed">
+									<img src="images/logo-single.png" alt="App Logo" class="img-responsive" />
+								</div>
+							</a>
+						</div>
+						<!-- 菜单按钮-->
+						<div class="nav-wrapper">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
+										<em class="fa fa-navicon"></em>
+									</a>
+									<a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+										<em class="fa fa-navicon"></em>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="contri" style="display: inline-block; position: absolute; top: 5px; right: 50px;z-index:100000;">
+							<a href="/?_locale=zh_CN"><img src="../images/china.jpg" alt=""></a>
+							<a href="/?_locale=en_US"><img src="../images/USA.jpg" alt=""></a>
+							<a href="/?_locale=ko_KR"><img src="../images/korean.jpg" alt=""></a>
+							<a href="/?_locale=ja_JP"><img src="../images/japan.jpg" alt=""></a>
+						</div>
+					</nav>
+				</header>
+					<!-- 侧边栏-->
+﻿<!DOCTYPE html>
+<html lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		 <!-- 侧边栏-->
+				 <aside class="aside">
+					<div class="aside-inner">
+						<nav class="sidebar">
+							<ul class="nav">
+								<li class="nav-heading">
+									<span>欢迎使用</span>
+								</li>
+								<li >
+									<a href="#message1" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>切换语言</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message1" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="#mess2" title="Layouts" data-toggle="collapse">
+												<span>中文版</span><i class="fa fa-th-list hidden-xs" style="float: right;" aria-hidden="true"></i>
+											</a>
+											<div id="mess2" class="nav sidebar-subnav collapse">
+												<a href="/?_locale=zh_TW"><span class="text-left">中文繁体</span></a>
+												<a href="/?_locale=zh_CN"><span class="text-left">中文简体</span></a>
+											</div>
+										</li>
+										<li class="">
+											<a href="/?_locale=en_US">
+												<span>英文版</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="/?_locale=ko_KR">
+												<span>韩文版</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="/?_locale=ja_JP">
+												<span>日文版</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								
+								<li >
+									<a href="#message2" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>我的账户</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message2" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="index">
+												<span>首页</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="wordedit">
+												<span>更改登录密码</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="safeedit">
+												<span>更改安全密码</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="useredit">
+												<span>个人信息资料</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li >
+									<a href="#message3" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>会员管理</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message3" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="userreg">
+												<span>立即注册</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="recmlists">
+												<span>我的推荐</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="useraudio">
+												<span>会员审核</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="NetworkDiagram?huinumber=a3">
+												<span>接点图谱</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li >
+									<a href="#message4" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>账户中心</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message4" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="tctz">
+												<span>增加配套</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="taochan">
+												<span>配套管理</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li >
+									<a href="#message5" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>资产管理</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message5" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="tofxbt">
+												<span>分享补贴</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="tozcsy">
+												<span>资产收益</span>
+											</a>
+										</li>
+											<li class="">
+											<a href="transfernbzz">
+												<span>内部转账</span>
+											</a>
+										</li>	<li class="">
+											<a href="transfer">
+												<span>会员转账</span>
+											</a>
+										</li>	<li class="">
+											<a href="transferlist">
+												<span>转账记录</span>
+											</a>
+										</li>	<li class="">
+											<a href="remittance">
+												<span>申请充值</span>
+											</a>
+										</li>	<li class="">
+											<a href="remittancelist">
+												<span>充值记录</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							    <li >
+									<a href="#message6" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>数字资产</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message6" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="tozylmx">
+												<span>众易链明细</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="togzyl">
+												<span>购众易链</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="whitdraw">
+												<span>提币</span>
+											</a>
+										</li>
+											<li class="">
+											<a href="whitdrawlist">
+												<span>提币记录</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								  <li >
+									<a href="#message7" title="Layouts" data-toggle="collapse">
+										<em class="icon-graph"></em>
+										<span>公告中心</span><i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+									</a>
+									<ul id="message7" class="nav sidebar-subnav collapse">
+										<li class="">
+											<a href="notice">
+												<span>新闻公告</span>
+											</a>
+										</li>
+										<li>
+										<a href="#mail" title="Layouts" data-toggle="collapse">
+											<em class="icon-bubbles"></em>
+											<span>内部邮箱</span>
+											<i class="fa fa-th-list" style="float: right;" aria-hidden="true"></i>
+										</a>
+										<ul id="mail" class="nav sidebar-subnav collapse">
+											<li class="">
+												<a href="send">
+													<span>发邮件</span>
+												</a>
+											</li>
+											<li class="">
+												<a href="sendlists">
+													<span>发件箱</span>
+												</a>
+											</li>
+											<li class="">
+												<a href="collectlists">
+													<span>收件箱</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									</ul>
+								</li>
+								<li class="home-main">
+									<a id="Link_exit" href="login">
+										<span>注销登录</span>
+									</a>
+								</li>  
+							</ul>
+						</nav>
+					</div>
+				</aside>
+</html>				<section>
+					<div class="content-wrapper">
+						<h3>登录密码修改</h3>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="form-horizontal">
+									<fieldset>
+										<legend>可改信息</legend>
+										<input type="hidden" value="154" name="id"/>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">安全密码</label>
+											<div class="col-sm-10">
+												<input name="old" type="password" id="old" class="form-control input-sm" />
+											</div>
+										</div>
+									</fieldset>
+									<fieldset>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">新登录密码</label>
+											<div class="col-sm-10">
+												<input name="newpwd" type="password" 
+												id="newpwd" class="form-control input-sm" />
+											</div>
+										</div>
+									</fieldset>
+									<fieldset>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">确认新登录密码</label>
+											<div class="col-sm-10">
+												<input name="newagin" type="password"  id="newagin"  class="form-control input-sm" />
+											</div>
+										</div>
+									</fieldset>
+											<fieldset>
+										<div class="form-group">
+											<label class="col-sm-2 control-label"></label>
+											<div class="col-sm-10">
+												 <label style="color: red"></label>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset>
+										<div class="form-group">
+											<div class="col-sm-4 col-sm-offset-2">
+												<input type="button"  
+												  onclick="tjf();"
+												 value="保存" id="ContentPlaceHolder1_btn_enter" class="btn btn-primary" />
+											</div>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+			</div>
+		</form>
+	</body>
+
+</html>

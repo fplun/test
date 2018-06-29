@@ -1,0 +1,100 @@
+.login{
+    margin: 0 !important;
+    color: #666;
+    background: url(../images/loginbg.jpg);
+    font-size: 13px !important;
+    font-family: 'Microsoft YaHei''Arial', "黑体", "宋体", Arial, sans-serif !important;
+    line-height: 20px;
+}
+
+@keyframes gaussian-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.logo-login {
+    color: #FFF;
+    padding: 45px;
+    padding-bottom: 0px;
+    animation: gaussian-fade 1s;
+}
+
+.logo-login .logo-title {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+    font-family: YouYuan
+}
+
+.logo-login .logo-icon {
+    text-align: center;
+    border-top: 1px solid #fff;
+    position: relative;
+    height: 1em;
+}
+
+.logo-login .logo-icon span {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    margin-top: -0.5em;
+    margin-left: -10px
+}
+
+.logo-login .logo-remark {
+    font-size: 1.3em;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+    padding-bottom: 3em;
+}
+
+.form-group {
+    padding-bottom: 1.5em;
+}
+
+.form-control {
+    border-radius: 3px;
+    border: #fff solid 1px;
+    /* filter:alpha(opacity=50); */
+    height: 38px;
+    line-height: 25px;
+    color: #fff;
+    /* background: rgba(255, 255, 255, 0.1); */
+}
+
+.form-control:focus {
+    border-color: #bbe8ff !important;
+    box-shadow: none !important
+}
+
+.form-control::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.account-box {
+    z-index: 3;
+    padding: 10%;
+    font-size: 13px !important;
+    animation: gaussian-fade 3s;
+    padding-top: 54px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.account-box .btn:hover {
+    color: #fff
+}
+
+.btn-primary {
+    border: none 0px;
+    height: 35px;
+    line-height: 23px;
+    border-radius: 0px;
+    font-weight: bold;
+    border-radius: 3px;
+}
